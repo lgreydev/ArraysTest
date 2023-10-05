@@ -21,11 +21,17 @@
     
     NSArray* array = [[NSArray alloc] initWithObjects:@"String 1", @"String 2", @"String 3", nil];
     
-    for (int i = 0; i < 3; i++) {
+    /*
+    for (int i = 0; i < [array count]; i++) {
         NSLog(@"%@",  [array objectAtIndex:i]);
         NSLog(@"index i = %d", i);
     }
+    */
     
+    for (int i = [array count] - 1.0; i >= 0; i--) {
+        NSLog(@"%@",  [array objectAtIndex:i]);
+        NSLog(@"index i = %d", i);
+    }
     
     return YES;
 }
