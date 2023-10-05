@@ -16,6 +16,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    
+    NSArray* array = [[NSArray alloc] initWithObjects:@"String 1", @"String 2", @"String 3", nil];
+    
+    for (int i = 0; i < 3; i++) {
+        NSLog(@"%@",  [array objectAtIndex:i]);
+        NSLog(@"index i = %d", i);
+    }
+    
+    
     return YES;
 }
 
