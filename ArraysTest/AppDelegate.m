@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SLObject.h"
 
 @interface AppDelegate ()
 
@@ -17,14 +18,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
+    /*
     
 //    NSArray* array = [[NSArray alloc] initWithObjects:@"String 1", @"String 2", @"String 3", nil];
 //    NSArray* array = [NSArray arrayWithObjects:@"String 1", @"String 2", @"String 3", nil];
     NSArray* array = @[@"String 1", @"String 2", @"String 3"];
     
     // Increasing
-    /*
+ 
     for (int i = 0; i < [array count]; i++) {
         NSLog(@"%@",  [array objectAtIndex:i]);
         NSLog(@"index i = %d", i);
@@ -35,11 +36,27 @@
         NSLog(@"%@",  [array objectAtIndex:i]);
         NSLog(@"index i = %d", i);
     }
-    */
+    
     
     for (NSString* string in array) {
         NSLog(@"%@, index = %lu",  string, [array indexOfObject:string]);
 //        NSLog(@"index = %lu", [array indexOfObject:string]);
+    }
+     */
+    
+    SLObject* obj1 = [[SLObject alloc] init];
+    SLObject* obj2 = [[SLObject alloc] init];
+    SLObject* obj3 = [[SLObject alloc] init];
+    
+    obj1.name = @"Object 1";
+    obj2.name = @"Object 2";
+    [obj3 setName:@"Object 3"];
+    
+    NSArray* array = [NSArray arrayWithObjects:obj1, obj2, obj3, nil];
+    
+    for (SLObject* obj in array) {
+        NSLog(@"name = %@", obj.name);
+        [obj action];
     }
     
     return YES;
