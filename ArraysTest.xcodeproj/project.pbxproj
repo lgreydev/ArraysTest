@@ -15,6 +15,7 @@
 		5EF869352ACEE15B00E09B19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF869332ACEE15B00E09B19 /* LaunchScreen.storyboard */; };
 		5EF869382ACEE15B00E09B19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF869372ACEE15B00E09B19 /* main.m */; };
 		5EF869402AD0144F00E09B19 /* SLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF8693F2AD0144F00E09B19 /* SLObject.m */; };
+		5EF869432AD42BA900E09B19 /* SLChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF869422AD42BA900E09B19 /* SLChild.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		5EF869372ACEE15B00E09B19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5EF8693E2AD0144F00E09B19 /* SLObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLObject.h; sourceTree = "<group>"; };
 		5EF8693F2AD0144F00E09B19 /* SLObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLObject.m; sourceTree = "<group>"; };
+		5EF869412AD42BA900E09B19 /* SLChild.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLChild.h; sourceTree = "<group>"; };
+		5EF869422AD42BA900E09B19 /* SLChild.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLChild.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				5EF869262ACEE15A00E09B19 /* AppDelegate.m */,
 				5EF8693E2AD0144F00E09B19 /* SLObject.h */,
 				5EF8693F2AD0144F00E09B19 /* SLObject.m */,
+				5EF869412AD42BA900E09B19 /* SLChild.h */,
+				5EF869422AD42BA900E09B19 /* SLChild.m */,
 				5EF869282ACEE15A00E09B19 /* SceneDelegate.h */,
 				5EF869292ACEE15A00E09B19 /* SceneDelegate.m */,
 				5EF8692B2ACEE15A00E09B19 /* ViewController.h */,
@@ -154,6 +159,7 @@
 				5EF8692D2ACEE15A00E09B19 /* ViewController.m in Sources */,
 				5EF869272ACEE15A00E09B19 /* AppDelegate.m in Sources */,
 				5EF869382ACEE15B00E09B19 /* main.m in Sources */,
+				5EF869432AD42BA900E09B19 /* SLChild.m in Sources */,
 				5EF869402AD0144F00E09B19 /* SLObject.m in Sources */,
 				5EF8692A2ACEE15A00E09B19 /* SceneDelegate.m in Sources */,
 			);

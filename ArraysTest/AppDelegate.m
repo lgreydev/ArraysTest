@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "SLObject.h"
+#import "SLChild.h"
 
 @interface AppDelegate ()
 
@@ -46,17 +47,24 @@
     
     SLObject* obj1 = [[SLObject alloc] init];
     SLObject* obj2 = [[SLObject alloc] init];
-    SLObject* obj3 = [[SLObject alloc] init];
+    SLChild* obj3 = [[SLChild alloc] init];
     
     obj1.name = @"Object 1";
     obj2.name = @"Object 2";
     [obj3 setName:@"Object 3"];
+    
+    obj3.lastName = @"Jordon";
     
     NSArray* array = [NSArray arrayWithObjects:obj1, obj2, obj3, nil];
     
     for (SLObject* obj in array) {
         NSLog(@"name = %@", obj.name);
         [obj action];
+        
+        if ([obj isKindOfClass:[SLChild class]]) {
+            SLChild* child = (SLChild*)obj;
+            NSLog(@"Last name = %@", child.lastName);
+        }
     }
     
     return YES;
